@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="setStyle('background', 'green')">变背景颜色为绿色</button>
+    <button onclick="setStyle('width', '100px')">变宽100px</button>
+    <button onclick="setStyle('height', '400px')">变高400px</button>
+    <button onclick="setStyle('fontSize', '60px')">变字体大小为60px</button>
+    <button onclick="setStyle('color', 'blue')">变文本颜色为蓝色</button>
+    <div class="box" id="box">Box</div>
+    <script>
+        function setStyle(name, value) {
+            document.getElementById('box').style.name = value
+        }
+    </script>
+</body>
+</html>
